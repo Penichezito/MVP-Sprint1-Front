@@ -1,1 +1,51 @@
-m
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>API Lista de Jogos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+      <!-- Cabeçalho de informações do sistema -->
+      <header>
+        <div class="title">
+            <h1>Catálogo de Jogos</h1>
+        </div>
+        <div class="banner">
+            <img src="img/71f8736c3628d4661156b62a4d68781f.jpg">
+        </div>
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newGame" placeholder="Adicionar novo jogo:">
+        <input type="text" id="newgender" placeholder="Genero:">
+        <input type="text" id="newPlataform" placeholder="Plataforma:">
+        <input type="text" id="newYearLaunch" placeholder="Ano Lançamento:">
+        <span onclick="newItem()" class="addBtn">Adicionar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Genero</th>
+                <th>Plataforma</th>
+                <th>Ano</th>
+                <th><img src="img/edit.png" width="15px" height="15px"></th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
