@@ -1,4 +1,6 @@
-# Catálogo de Jogos 
+#MVP Sprint 1 FronEnd
+
+# Lista de Jogos 
 
 Esta é a FrontEnd do meu primeiro projeto MVP para a primeira Sprint do curso de Pós Graduação em Engenharia de Software da PUC- RIO. 
 
