@@ -68,7 +68,6 @@ const getList = async () => {
   */
   const removeElement = () => {
     let close = document.getElementsByClassName("close");
-    var table = document.getElementById('myTable');
     let i;
     for (i = 0; i < close.length; i++) {
       close[i].onclick = function () {
