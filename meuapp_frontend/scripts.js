@@ -30,7 +30,7 @@ const getList = async () => {
     Função para colocar um item na lista do servidor via requisição POST
     --------------------------------------------------------------------------------------
   */
-  const postItem = async (inputGame, inputgender, inputPlatform, inputYearLaunch) => {
+  const postItem = async (inputGame, inputGender, inputPlatform, inputYearLaunch) => {
     const formData = new FormData();
     formData.append('jogo', inputGame);
     formData.append('genero', inputGender);
@@ -116,7 +116,7 @@ const getList = async () => {
     } else if (isNaN(inputYearLaunch)) {
       alert("Ano precisa ser um número!");
     } else {
-      insertList(input)
+      insertList(inputGame, inputGender, inputPlatform, inputYearLaunch)
       postItem(inputGame, inputGender, inputPlatform, inputYearLaunch)
       alert("Item adicionado!")
     }
