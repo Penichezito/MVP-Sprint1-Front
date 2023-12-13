@@ -10,7 +10,7 @@ const getList = async () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        data.jogos.forEach(item => insertList(item.id, item.jogo, item.genero, item.plataforma, item.ano))
+        data.jogos.forEach(item => insertList(item.jogo, item.genero, item.plataforma, item.ano))
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -30,7 +30,7 @@ const getList = async () => {
     Função para colocar um item na lista do servidor via requisição POST
     --------------------------------------------------------------------------------------
   */
-  const postItem = async (inputGame, inputGender, inputPlatform, inputYearLaunch) => {
+  const postItem = async (inputGame, inputgender, inputPlatform, inputYearLaunch) => {
     const formData = new FormData();
     formData.append('jogo', inputGame);
     formData.append('genero', inputGender);
